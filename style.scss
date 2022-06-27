@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    form {
+        label{
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        input[type=email],
+        input[type=email]:focus {
+            // border: none;
+            // border-bottom: 1px solid black;
+            // outline: none;
+            // padding-left: 40px;
+            // background-image: url('./email-svgrepo-com.svg');
+            // background-position: 10px 10px;
+            // background-repeat: no-repeat;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-size: 30px 30px;
+            background-position: 6px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+        }
+        input[type=text] {
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-size: 30px 30px;
+            background-position: 6px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            width: 50%;
+            transition: width 0.4s ease-in-out;
+        }
+        input[type=text]:focus {
+            width: 100%;
+        }
+    }
+}
